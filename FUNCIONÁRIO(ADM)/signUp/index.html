@@ -14,37 +14,38 @@
     <div class="background">
         <div class="container">
             <div class="img-container">
-                <img src="/imagens_telas/img_cadastro.png" alt="Imagem tela de login" class="imgLogin">
+                <img src="/imagens_telas/img_cadastro.png" alt="Imagem tela de cadastro" class="imgCadastro">
             </div>
             <div class="conteudo">
-                <p class="login">Cadastro</p>
+                <p class="cadastro">Cadastro</p>
                 <input type="number" placeholder="RM" class="input-field">
                 <input type="text" placeholder="Nome completo" class="input-field">
-                <input type="text" placeholder="E-mail" class="input-field">
-                <input type="password" placeholder="Senha" class="input-field">
-                <input type="password" placeholder="Confirmar senha" class="input-field">
-                
+                <input type="email" placeholder="E-mail" class="input-field">
+                <div class="senha">
+                <input type="password" placeholder="Senha" class="input-field senha-field">
+                <input type="password" placeholder="Confirmar senha" class="input-field senha-field">
+                </div>
                 <form>
                     <legend>Sexo:</legend>
 
                     <label>
-                        <input type="radio" name="feminino" value="feminino">
+                        <input type="radio" name="opcao" value="feminino">
                         Feminino
                     </label>
                     <label>
-                        <input type="radio" name="masculino" value="masculino">
+                        <input type="radio" name="opcao" value="masculino">
                         Masculino
                     </label>
                     <label>
-                        <input type="radio" name="neutro" value="neutro">
+                        <input type="radio" name="opcao" value="neutro">
                         Neutro
                     </label>
                 </form>
 
-                <div class="cadastre">
-                    Já tem uma conta? <a href="/FUNCIONÁRIO(ADM)/signUp/">Faça login</a>
+                <div class="logar">
+                    Já tem uma conta? <a href="/FUNCIONÁRIO(ADM)/login/">Faça login</a>
                 </div>
-                <button class="login-button">Fazer cadastro</button>
+                <button type="submit" class="cadastro-button">Fazer cadastro</button>
             </div>
         </div>
     </div>

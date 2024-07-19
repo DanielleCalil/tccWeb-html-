@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    width: 100%;
     margin: 0;
     box-sizing: border-box;
 }
@@ -18,27 +19,28 @@ body, html {
 }
 
 .container {
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .img-container {
     display: flex;
-    
 }
 
-.imgLogin {
+.imgCadastro {
     width: 350px;
     height: 300px;
 }
 
-.login {
+.cadastro {
     font-size: 30px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
     margin-top: 0;
-    margin-bottom: 5;
+    margin-bottom: 15px;
 }
 
 .conteudo {
@@ -46,14 +48,13 @@ body, html {
 }
 
 .input-field {
-    display: block;
-    width: 100%;
+    width: 80%;
     height: 45px;
     padding: 20px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 30px;
-    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura do container */
+    box-sizing: border-box; 
 }
 
 .input-field::placeholder {
@@ -63,6 +64,20 @@ body, html {
     font-weight: 400;
     font-style: normal;
     opacity: 1;
+}
+.senha {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.senha-field {
+    margin: 10px; /* Adiciona espaçamento vertical entre os inputs */
+    align-items: center;
+    justify-content: center;
 }
 
 /* Remove as setas do input de número */
@@ -87,9 +102,10 @@ label {
     font-weight: 300;
     font-style: normal;
     font-size: 14px;
+    padding: 10px;
 }
 
-.cadastre {
+.logar {
     color: #FF735C;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -99,19 +115,11 @@ label {
     margin-bottom: 5px;
 }
 
-.esqueceuSenha {
-    color: #FF735C; /* Cor do texto */
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 12px;
-}
-
 a {
     color: #FF735C; /* Cor do texto */
 }
 
-.login-button {
+.cadastro-button {
     width: 35%;
     height: 45px;
     padding: 10px;
@@ -121,13 +129,12 @@ a {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura do container */
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
 }
 
-.login-button:hover {
+.cadastro-button:hover {
     opacity: 0.5;
 }
