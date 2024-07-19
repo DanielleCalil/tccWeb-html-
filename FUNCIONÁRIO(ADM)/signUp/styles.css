@@ -28,8 +28,8 @@ body, html {
 }
 
 .imgLogin {
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 300px;
 }
 
 .login {
@@ -70,6 +70,23 @@ input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+legend {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
 }
 
 .cadastre {
