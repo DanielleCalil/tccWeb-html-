@@ -5,12 +5,17 @@ body, html {
     box-sizing: border-box;
 }
 
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
 .retangGreen {
-    width: 100%; /* Largura do retângulo */
-    height: 65px; /* Altura do retângulo */
-    background-color: #3F7263; /* Cor de fundo do retângulo */
+    width: 100%; 
+    height: 65px; 
+    background-color: #3F7263; 
     display: flex;
-    justify-content: center; /* Alinha horizontalmente no centro */
+    justify-content: center; 
     align-items: center;
     position: relative;
 }
@@ -23,7 +28,7 @@ body, html {
 .imgEtec {
     height: 35px;
     width: 85px;
-    position: absolute; /* Posiciona .imgEtec em relação ao .retangGreen */
+    position: absolute; 
     right: 0;
     bottom: 12px;
     margin-right: 30px;
@@ -31,51 +36,146 @@ body, html {
 
 .retangOrange {
     width: 100%;
-    height: 12px; 
+    height: 14px; 
     background-color: #FF735C;
-    margin-bottom: 3%;
 }
 
 .navbar {
     background-color: #FFF;
     overflow: hidden;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .navbar ul li {
-    float: left;
-    font-size: 16px;
+    flex: 1;
 }
 
 .navbar ul li a {
     display: flex;
-    align-items: center; /* Centraliza verticalmente o ícone e o texto */
+    align-items: center; 
+    justify-content: center;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 14px;
     text-decoration: none;
-    background: none; /* Remove qualquer fundo */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .navbar ul li a i {
-    font-size: 22px; /* Ajuste o tamanho do ícone conforme necessário */
-    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
-    background: none !important; /* Garante que o fundo seja removido */
-    border: none !important; /* Remove qualquer borda */
-    outline: none !important;
+    font-size: 22px; 
+    margin-right: 8px; 
 }
 
-.navbar ul li a:hover {
-    background-color: #111;
+.navbar ul li a.active {
+    background-color: #FF735C; 
+    color: black; 
 }
 
-.content {
-    padding: 20px;
+.navbar ul li a.sair {
+    color: red;
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 16px;
+}
 
+.search-container input {
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    width: 42%;
+    margin-left: 10px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.imgHorario {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.book-list {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
+    gap: 10px; /* Espaçamento entre os livros */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.book-item {
+    flex: 1 1 calc(16.66% - 20px); /* Faz com que cada item ocupe cerca de 1/6 do espaço disponível, com 10px de espaçamento */
+    box-sizing: border-box; /* Inclui o padding e border no cálculo da largura total */
+    max-width: calc(12% - 20px); /* Garante que o item não exceda 1/6 do espaço disponível */
+    background: #f0f0f0; /* Adiciona uma cor de fundo para que você possa ver a área do item */
+    padding: 10px; /* Adiciona um padding interno */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    text-align: center; /* Centraliza o texto dentro do item */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adiciona uma sombra leve ao redor dos itens */
+}
+
+.book-image {
+    width: 80%; /* Faz com que a imagem ocupe a largura total do item */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-info {
+    padding: 1px;
+}
+
+.book-title {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.book-author,
+.book-course {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+}
