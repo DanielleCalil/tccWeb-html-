@@ -68,16 +68,14 @@ body, html {
 .senha {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin-right: 10px;
-    align-items: center;
     justify-content: center;
+    gap: 10px; /* Espaçamento entre os campos */
+    width: 100%;
 }
 
 .senha-field {
-    margin: 10px; /* Adiciona espaçamento vertical entre os inputs */
-    align-items: center;
-    justify-content: center;
+    width: calc(40.5% - 10px); /* Ajuste conforme necessário, -10px por causa do gap */
+    margin: 10px 0;
 }
 
 /* Remove as setas do input de número */
@@ -87,14 +85,53 @@ input[type=number]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-legend {
-    text-align: left;
-    margin-top: 15px;
-    margin-bottom: 6px;
+.sexo-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os elementos */
+    margin-top: 12px;
+}
+
+.sexo-form legend {
+    margin: 0; /* Remove a margem padrão do legend */
+    padding-right: 10px; /* Espaçamento à direita do legend */
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 14px;
+    font-size: 15px;
+}
+
+/* Estilizando o radio button personalizado */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc; /* Cor da borda externa */
+    border-radius: 50%;
+    background: #fff; /* Cor de fundo inicial */
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:checked {
+    border: 1px solid #FF735C; /* Cor da borda externa */
+    background-color: #FF735C; /* Cor interna quando selecionado */
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff; /* Cor do ponto central quando selecionado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 label {
@@ -102,7 +139,8 @@ label {
     font-weight: 300;
     font-style: normal;
     font-size: 14px;
-    padding: 10px;
+    padding-left: 30px; /* Espaçamento entre o radio button e o texto */
+    cursor: pointer;
 }
 
 .logar {
@@ -120,7 +158,7 @@ a {
 }
 
 .cadastro-button {
-    width: 35%;
+    width: 28%;
     height: 45px;
     padding: 10px;
     margin: 20px 0;
