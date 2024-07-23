@@ -5,12 +5,17 @@ body, html {
     box-sizing: border-box;
 }
 
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
 .retangGreen {
-    width: 100%; /* Largura do retângulo */
-    height: 65px; /* Altura do retângulo */
-    background-color: #3F7263; /* Cor de fundo do retângulo */
+    width: 100%;
+    height: 65px;
+    background-color: #3F7263;
     display: flex;
-    justify-content: center; /* Alinha horizontalmente no centro */
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -23,7 +28,7 @@ body, html {
 .imgEtec {
     height: 35px;
     width: 85px;
-    position: absolute; /* Posiciona .imgEtec em relação ao .retangGreen */
+    position: absolute;
     right: 0;
     bottom: 12px;
     margin-right: 30px;
@@ -41,6 +46,8 @@ body, html {
     justify-content: center;
     width: 100%;
     border-bottom: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .navbar ul {
@@ -50,6 +57,7 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-grow: 1;
 }
 
 .navbar ul li {
@@ -58,11 +66,11 @@ body, html {
 
 .navbar ul li a {
     display: flex;
-    align-items: center; /* Centraliza verticalmente o ícone e o texto */
+    align-items: center;
     justify-content: center;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 14px;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -70,15 +78,156 @@ body, html {
 }
 
 .navbar ul li a i {
-    font-size: 22px; /* Ajuste o tamanho do ícone */
-    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    font-size: 22px;
+    margin-right: 8px;
 }
 
 .navbar ul li a.active {
-    background-color: #FF735C; /* Cor de fundo para o item ativo */
-    color: black; /* Cor do texto para o item ativo */
+    background-color: #FF735C;
+    color: black;
 }
 
 .navbar ul li a.sair {
     color: red;
+}
+
+.conteudo {
+    text-align: center;
+}
+
+.input-field {
+    width: 40%;
+    height: 45px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box; 
+}
+
+.input-field::placeholder {
+    color: #999;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 1;
+}
+
+/* Remove as setas do input de número */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.sexo-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.sexo-form legend {
+    margin: 0;
+    padding-right: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+/* Estilizando o radio button personalizado */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:checked {
+    border: 1px solid #FF735C; /* Cor da borda externa */
+    background-color: #FF735C; /* Cor interna quando selecionado */
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff; /* Cor do ponto central quando selecionado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logar {
+    color: #FF735C;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+a {
+    color: #FF735C;
+}
+
+.cadastro-button {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #FF735C;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.cadastro-button:hover {
+    opacity: 0.5;
+}
+
+footer {
+    display: block;
+	bottom: 0;
+	background: #fff;
+	width: 100%;
+	color:#000;
+	text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.288);
+    font-size: 14px;
+}
+footer a {
+    color: #FF735C;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #3F7263;
 }
