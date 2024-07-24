@@ -8,30 +8,174 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0" />
 </head>
 <body>
+    <div class="header">
+            <div class="retangGreen">
+                <img src="/imagens_telas/logo.png" class="imgLogo" alt="Logo">
+                <img src="/imagens_telas/etec.png" class="imgEtec" alt="Etec">
+            </div>
+            <div class="retangOrange"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/FUNCIONÁRIO(ADM)/telaInicial/"><span class="material-symbols-outlined">home</span>Início</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/perfil/"><span class="material-symbols-outlined">person</span>Perfil</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/selecao/"><span class="material-symbols-outlined">signpost</span>Seleção</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/recomendacao/"><span class="material-symbols-outlined">star</span>Recomendações</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/biblioteca/" class="active"><span class="material-symbols-outlined">menu_book</span>Biblioteca</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/reservas/"><span class="material-symbols-outlined">calendar_month</span>Reservas</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/notificacoes/"><span class="material-symbols-outlined">notifications</span>Notificações</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/emprestimos/"><span class="material-symbols-outlined">book_2</span>Empréstimos</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/informacoes/"><span class="material-symbols-outlined">info</span>Informações</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/login/" class="sair"><span class="material-symbols-outlined">logout</span>Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1 class="selecao">Biblioteca</h1>
+    <div class="search-container">
+        <input type="text" placeholder="Procurar" id="search-input">
+        <button type="button"><span class="material-symbols-outlined">search</span></button>
+    </div>
+
     <div class="container">
-        <div class="retangGreen">
-            <img src="/imagens_telas/logo.png" class="imgLogo" alt="Logo">
-            <img src="/imagens_telas/etec.png" class="imgEtec" alt="Etec">
+            <div class="genre-buttons">
+                <div class="book-genre">
+                    <img src="">
+                </div>  
+                <div class="book-genre">
+                    <!-- <button class="genre-button" data-genre="drama">Drama</button> -->
+                </div>
+                <div class="book-genre">
+                    <!-- <button class="genre-button" data-genre="romance">Romance</button> -->
+                </div>
+                <div class="book-genre">
+                    <!-- <button class="genre-button" data-genre="fiction">Ficção</button> -->
+                </div>
+                <div class="book-genre">
+                    <!-- <button class="genre-button" data-genre="fiction">Ficção</button> -->
+                </div>
+                <div class="book-genre">
+                    <!-- <button class="genre-button" data-genre="fiction">Ficção</button> -->
+                </div>
+                <div class="book-genre">
+                    <!-- <button class="genre-button" data-genre="fiction">Ficção</button> -->
+                </div>
+                <div class="book-genre">
+                    <!-- <button class="genre-button" data-genre="fiction">Ficção</button> -->
+                </div>
+            </div>
+    
+        <div class="book-list">
+            <div class="book-item" data-genre="drama">
+                <img src="/Capa_dos_livros/o diário de anne frank.jpg" alt="O diário de Anne Frank" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">O diário de Anne Frank</h2>
+                    <p class="book-author">Anne Frank</p>
+                </div>
+            </div>
+            <div class="book-item"> 
+                <img src="/Capa_dos_livros/dom casmurro.jpg" alt="Dom Casmurro" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">Dom Casmurro</h2>
+                    <p class="book-author">Machado de Assis</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <img src="/Capa_dos_livros/romeu e julieta.jpg" alt="Romeu e Julieta" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">Romeu e Julieta</h2>
+                    <p class="book-author">William Shakespeare</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <img src="/Capa_dos_livros/1984.jpg" alt="1984" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">1984</h2>
+                    <p class="book-author">George Orwell</p>
+                </div>
+            </div>
+            <div class="book-item">
+                <img src="/Capa_dos_livros/os miseráveis.jpg" alt="Os Miseráveis" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">Os Miseráveis</h2>
+                    <p class="book-author">Victor Hugo</p>
+                    
+                </div>
+            </div>
+            <div class="book-item">
+                <img src="/Capa_dos_livros/orgulho e preconceito.png" alt="Orgulho e Preconceito" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">Orgulho e Preconceito</h2>
+                    <p class="book-author">Jane Austen</p>
+                </div>
+            </div> 
+            <div class="book-item">
+                <img src="/Capa_dos_livros/heartstopper.jpg" alt="Heartstopper" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">Heartstopper</h2>
+                    <p class="book-author">Alice Oseman</p>
+                </div>
+            </div> 
+            <div class="book-item">
+                <img src="/Capa_dos_livros/procure nas cinzas.jpg" alt="Procure nas Cinzas" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">Procure nas Cinzas</h2>
+                    <p class="book-author">Charlie Donlea</p>
+                </div>
+            </div> 
+            <div class="book-item">
+                <img src="/Capa_dos_livros/os sete maridos de evelyn hugo.jpg" alt="Os Sete Maridos de Evelyn Hugo" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">Os Sete Maridos de Evelyn Hugo</h2>
+                    <p class="book-author">Taylor Jenkins Reid</p>
+                </div>
+            </div> 
+            <div class="book-item">
+                <img src="/Capa_dos_livros/a garota do lago.jpg" alt="A Garota do Lago" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">A Garota do Lago</h2>
+                    <p class="book-author">Charlie Donlea</p>
+                </div>
+            </div> 
+            <div class="book-item">
+                <img src="/Capa_dos_livros/verity.jpg" alt="Verity" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">Verity</h2>
+                    <p class="book-author">Colleen Hoover</p>
+                </div>
+            </div> 
+            <div class="book-item">
+                <img src="/Capa_dos_livros/harry potter e a pedra filosofal.jpg" alt="Harry Potter e a Pedra Filosofal" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">Harry Potter e a Pedra Filosofal</h2>
+                    <p class="book-author">J.K. Rowling</p>
+                </div>
+            </div> 
+            <div class="book-item">
+                <img src="/Capa_dos_livros/a revolução dos bichos.jpg" alt="A Revolução dos Bichos" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">A Revolução dos Bichos</h2>
+                    <p class="book-author">George Orwell</p>
+                </div>
+            </div> 
+            <div class="book-item">
+                <img src="/Capa_dos_livros/deixada para trás.jpg" alt="Deixada para Trás" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">Deixada para Trás</h2>
+                    <p class="book-author">George Orwell</p>
+                </div>
+            </div> 
+            <div class="book-item">
+                <img src="/Capa_dos_livros/dracula.jpg" alt="Drácula" class="book-image">
+                <div class="book-info">
+                    <h2 class="book-title">Drácula</h2>
+                    <p class="book-author">Bram Stoker</p>
+                </div>
+            </div> 
         </div>
-        <div class="retangOrange"></div>
-    <nav class="navbar">
-        <ul>
-            <li><a href="/FUNCIONÁRIO(ADM)/telaInicial/"><span class="material-symbols-outlined">home</span>Início</a></li>
-            <li><a href="/FUNCIONÁRIO(ADM)/perfil/"><span class="material-symbols-outlined">person</span>Perfil</a></li>
-            <li><a href="/FUNCIONÁRIO(ADM)/selecao/"><span class="material-symbols-outlined">signpost</span>Seleção</a></li>
-            <li><a href="/FUNCIONÁRIO(ADM)/recomendacao/"><span class="material-symbols-outlined">star</span>Recomendações</a></li>
-            <li><a href="/FUNCIONÁRIO(ADM)/biblioteca/" class="active"><span class="material-symbols-outlined">menu_book</span>Biblioteca</a></li>
-            <li><a href="/FUNCIONÁRIO(ADM)/reservas/"><span class="material-symbols-outlined">calendar_month</span>Reservas</a></li>
-            <li><a href="/FUNCIONÁRIO(ADM)/notificacoes/"><span class="material-symbols-outlined">notifications</span>Notificações</a></li>
-            <li><a href="/FUNCIONÁRIO(ADM)/emprestimos/"><span class="material-symbols-outlined">book_2</span>Empréstimos</a></li>
-            <li><a href="/FUNCIONÁRIO(ADM)/informacoes/"><span class="material-symbols-outlined">info</span>Informações</a></li>
-            <li><a href="/FUNCIONÁRIO(ADM)/login/" class="sair"><span class="material-symbols-outlined">logout</span>Sair</a></li>
-        </ul>
-    </nav>
     </div>
 </body>
 </html>

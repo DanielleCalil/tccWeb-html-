@@ -1,16 +1,27 @@
-body, html {
+html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     box-sizing: border-box;
 }
 
-.retangGreen {
-    width: 100%; /* Largura do retângulo */
-    height: 65px; /* Altura do retângulo */
-    background-color: #3F7263; /* Cor de fundo do retângulo */
+body {
     display: flex;
-    justify-content: center; /* Alinha horizontalmente no centro */
+    flex-direction: column;
+    margin: 0;
+}
+
+.header {
+    justify-content: center;
+    align-items: center;
+}
+
+.retangGreen {
+    width: 100%;
+    height: 65px;
+    background-color: #3F7263;
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -23,7 +34,7 @@ body, html {
 .imgEtec {
     height: 35px;
     width: 85px;
-    position: absolute; /* Posiciona .imgEtec em relação ao .retangGreen */
+    position: absolute;
     right: 0;
     bottom: 12px;
     margin-right: 30px;
@@ -41,6 +52,8 @@ body, html {
     justify-content: center;
     width: 100%;
     border-bottom: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .navbar ul {
@@ -50,6 +63,7 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-grow: 1;
 }
 
 .navbar ul li {
@@ -58,11 +72,11 @@ body, html {
 
 .navbar ul li a {
     display: flex;
-    align-items: center; /* Centraliza verticalmente o ícone e o texto */
+    align-items: center;
     justify-content: center;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 14px;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -70,15 +84,130 @@ body, html {
 }
 
 .navbar ul li a i {
-    font-size: 22px; /* Ajuste o tamanho do ícone */
-    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    font-size: 22px;
+    margin-right: 8px;
 }
 
 .navbar ul li a.active {
-    background-color: #FF735C; /* Cor de fundo para o item ativo */
-    color: black; /* Cor do texto para o item ativo */
+    background-color: #FF735C;
+    color: black;
 }
 
 .navbar ul li a.sair {
     color: red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 95%;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 16px;
+}
+
+.search-container input {
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    width: 42%;
+    margin-left: 10px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.book-list {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
+    gap: 10px; /* Espaçamento entre os livros */
+    justify-content: center;
+    /* max-width: 70%; */
+    margin: 0 auto;
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.book-item {
+    width: 200px;
+    box-sizing: border-box; /* Inclui o padding e border no cálculo da largura total */
+    max-width: calc(16.66% - 20px); /* Garante que o item não exceda 1/6 do espaço disponível */
+    background: #FFF;
+    padding: 4px; /* Adiciona um padding interno */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.288); /* Adiciona uma sombra leve ao redor dos itens */
+}
+
+.book-image {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-info {
+    padding: 1px;
+}
+
+.book-title {
+    font-size: 14px;
+    margin: 0 0 4px;
+}
+
+.book-author {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+}
+
+.book-course {
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.conteudo {
+    text-align: center;
+}
+
+.selecao {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
 }
