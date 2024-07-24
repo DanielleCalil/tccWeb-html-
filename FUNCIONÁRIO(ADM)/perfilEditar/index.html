@@ -42,7 +42,16 @@
                 <div class="img-container">
                     <img src="/imagens_telas/perfil.png" alt="Foto de perfil">
                 </div>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <label for="fileInput" class="custom-file-upload">
+                        Escolher nova foto
+                    </label>
+                    <input type="file" id="fileInput" name="profileImage" accept="image/*">
+                </form>
             </div>
+            
+        
+
             <div class="input-container">
                 <div class="input-group">
                     <p class="text-input">RM:</p>
@@ -50,7 +59,7 @@
                 </div>
                 <div class="input-group">
                     <p class="text-input">Nome social:</p>
-                    <input type="text" class="input-field" disabled>
+                    <input type="text" class="input-field">
                 </div>
                 <div class="input-group">
                     <p class="text-input">Nome completo:</p>
@@ -58,20 +67,20 @@
                 </div>
                 <div class="input-group">
                     <text class="text-input">E-mail:</text>
-                    <input type="email" class="input-field" disabled>
+                    <input type="email" class="input-field">
                 </div>
                 <form class="sexo-form">
                     <legend>Sexo:</legend>
                     <label>
-                        <input type="radio" name="opcao" value="feminino" disabled>
+                        <input type="radio" name="opcao" value="feminino">
                         Feminino
                     </label>
                     <label>
-                        <input type="radio" name="opcao" value="masculino" disabled>
+                        <input type="radio" name="opcao" value="masculino">
                         Masculino
                     </label>
                     <label>
-                        <input type="radio" name="opcao" value="neutro" disabled>
+                        <input type="radio" name="opcao" value="neutro">
                         Neutro
                     </label>
                 </form>
@@ -82,7 +91,7 @@
         <a href="/FUNCIONÁRIO(ADM)/login/">Esqueceu a senha?</a>
     </div>
     <div class="editar">
-        <a href="/FUNCIONÁRIO(ADM)/perfilEditar/"><button type="submit" class="cadastro-button"><img src="/imagens_telas/editar_perfil.png"></button></a>
+        <a href="/FUNCIONÁRIO(ADM)/perfil/"><button type="submit" class="cadastro-button">Salvar</button></a>
     </div>
 </body>
 </html>
