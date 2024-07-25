@@ -1,16 +1,27 @@
-body, html {
+html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     box-sizing: border-box;
 }
 
-.retangGreen {
-    width: 100%; /* Largura do retângulo */
-    height: 65px; /* Altura do retângulo */
-    background-color: #3F7263; /* Cor de fundo do retângulo */
+body {
     display: flex;
-    justify-content: center; /* Alinha horizontalmente no centro */
+    flex-direction: column;
+    margin: 0;
+}
+
+.header {
+    justify-content: center;
+    align-items: center;
+}
+
+.retangGreen {
+    width: 100%;
+    height: 65px;
+    background-color: #3F7263;
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -23,7 +34,7 @@ body, html {
 .imgEtec {
     height: 35px;
     width: 85px;
-    position: absolute; /* Posiciona .imgEtec em relação ao .retangGreen */
+    position: absolute;
     right: 0;
     bottom: 12px;
     margin-right: 30px;
@@ -41,6 +52,8 @@ body, html {
     justify-content: center;
     width: 100%;
     border-bottom: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .navbar ul {
@@ -50,6 +63,7 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-grow: 1;
 }
 
 .navbar ul li {
@@ -58,11 +72,11 @@ body, html {
 
 .navbar ul li a {
     display: flex;
-    align-items: center; /* Centraliza verticalmente o ícone e o texto */
+    align-items: center;
     justify-content: center;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 14px;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -70,15 +84,207 @@ body, html {
 }
 
 .navbar ul li a i {
-    font-size: 22px; /* Ajuste o tamanho do ícone */
-    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    font-size: 22px;
+    margin-right: 8px;
 }
 
 .navbar ul li a.active {
-    background-color: #FF735C; /* Cor de fundo para o item ativo */
-    color: black; /* Cor do texto para o item ativo */
+    background-color: #FF735C;
+    color: black;
 }
 
 .navbar ul li a.sair {
     color: red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 95%;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.lineSquare {
+    width: 410px;
+    box-sizing: border-box;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.info-book-reserva {
+    display: flex;
+}
+
+.img-reserva {
+    height: auto;
+    width: 50px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.livro-info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.line {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 50%;
+}
+
+.info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.p-usuario {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    text-align: center;
+}
+
+.opcao {
+    justify-content:space-evenly;
+    align-items: center;
+    display: flex;
+
+}
+
+.select-input {
+    width: 58%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    margin: 14px;
+    font-size: 12px;
+}
+
+/* Opcional: Estilo para hover e focus */
+.select-input:hover,
+.select-input:focus {
+    border-color: #FF735C;
+    outline: none;
+}
+
+.conteudo {
+    text-align: center;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.p-i-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.selecao {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.input-container {
+    width: 100%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.text-input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.confirm-button {
+    height: 50px;
+    width: 120px;
+    background-color: #FF735C;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.confirm-button:hover,
+.cancel-button:hover {
+    opacity: 0.5;
+}
+
+.cancel-button {
+    height: 50px;
+    width: 120px;
+    background-color: #FFF;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.obs {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8a8a8a;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }

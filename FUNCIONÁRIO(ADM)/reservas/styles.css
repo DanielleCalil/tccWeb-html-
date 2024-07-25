@@ -260,6 +260,11 @@ input[type="file"] {
     font-size: 12px;
 }
 
+.confirm-button:hover,
+.cancel-button:hover {
+    opacity: 0.5;
+}
+
 .cancel-button {
     height: 50px;
     width: 120px;

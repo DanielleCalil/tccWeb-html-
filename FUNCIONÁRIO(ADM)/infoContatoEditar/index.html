@@ -27,31 +27,32 @@
                 <li><a href="/FUNCIONÁRIO(ADM)/biblioteca/"><span class="material-symbols-outlined">menu_book</span>Biblioteca</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/reservas/"><span class="material-symbols-outlined">calendar_month</span>Reservas</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/notificacoes/"><span class="material-symbols-outlined">notifications</span>Notificações</a></li>
-                <li><a href="/FUNCIONÁRIO(ADM)/emprestimos/"  class="active"><span class="material-symbols-outlined">book_2</span>Empréstimos</a></li>
-                <li><a href="/FUNCIONÁRIO(ADM)/infoContato/"><span class="material-symbols-outlined">info</span>Informações</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/emprestimos/"><span class="material-symbols-outlined">book_2</span>Empréstimos</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/infoContato/"  class="active"><span class="material-symbols-outlined">info</span>Informações</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/login/" class="sair"><span class="material-symbols-outlined">logout</span>Sair</a></li>
             </ul>
         </nav>
     </div>
 
-    <h1 class="selecao">Empréstimos</h1>
+    <h1 class="selecao">Informações de Contato</h1>
 
     <div class="container">
-        <div class="lineSquare">
+        <img src="/imagens_telas/contato.jpg" alt="Imagem tela contatos" class="img-contato">
             <div class="input-container">
-                <div class="info-book-reserva">
-                    <img src="/Capa_dos_livros/o diário de anne frank.jpg" alt="O Diário de Anne Frank" class="img-reserva">
-                    <div class="livro-info">
-                        <p>O Diário de Anne Frank</p>
-                        <p>Por: Anne Frank</p>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <p class="info">Reservado por: Clara Oliveira da Silva</p>
-                <p class="info">Reserva realizada no dia: 12/03/2024</p>
-                <p class="info">Período da reserva: 12/03/2024 até 27/03/2024</p>
-            </div>
-        </div>
+            <div class="input-group">   
+                <form>
+                    <input type="text" id="nome" placeholder="Nome da escola" name="nome" value="ETEC PROF. MASSUYUKI KAWANO" class="input-field">
+                    <br><br>
+                    <input type="text" id="infos" name="infos" value="(14) 3496 1520 - (14) 3491 5393
+                    RUA: BEZERRA DE MENEZES, 215
+                    CEP 17605-440
+                    E136DIR@CPS.SP.GOV.BR" class="input-field">
+                </form>
+            </div> 
+        </div> 
+    </div>
+    <div class="editar">
+        <a href="/FUNCIONÁRIO(ADM)/infoContato/"><button type="submit" class="save-button">Salvar</button></a>
     </div>
 </body>
 </html>
