@@ -24,10 +24,10 @@
                 <li><a href="/FUNCIONÁRIO(ADM)/perfil/"><span class="material-symbols-outlined">person</span>Perfil</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/selecao/"><span class="material-symbols-outlined">signpost</span>Seleção</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/recomendacao/"><span class="material-symbols-outlined">star</span>Recomendações</a></li>
-                <li><a href="/FUNCIONÁRIO(ADM)/biblioteca/"><span class="material-symbols-outlined">menu_book</span>Biblioteca</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/biblioteca/" class="active"><span class="material-symbols-outlined">menu_book</span>Biblioteca</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/reservas/"><span class="material-symbols-outlined">calendar_month</span>Reservas</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/notificacoes/"><span class="material-symbols-outlined">notifications</span>Notificações</a></li>
-                <li><a href="/FUNCIONÁRIO(ADM)/emprestimos/"  class="active"><span class="material-symbols-outlined">book_2</span>Empréstimos</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/emprestimos/"><span class="material-symbols-outlined">book_2</span>Empréstimos</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/infoContato/"><span class="material-symbols-outlined">info</span>Informações</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/login/" class="sair"><span class="material-symbols-outlined">logout</span>Sair</a></li>
             </ul>
@@ -35,23 +35,52 @@
     </div>
 
 <main>
-    <h1 class="emprestimo">Empréstimos</h1>
-
+    <h1 class="informacoes">Informações do livro</h1>
+    <button class="remov-button">- Remover</button>
     <div class="container">
         <div class="lineSquare">
             <div class="input-container">
                 <div class="info-book-reserva">
                     <img src="/Capa_dos_livros/o diário de anne frank.jpg" alt="O Diário de Anne Frank" class="img-reserva">
                     <div class="livro-info">
-                        <p>O Diário de Anne Frank</p>
-                        <p>Por: Anne Frank</p>
+                        <div class="header-lineSquare">
+                            <div class="title">
+                                <p class="geral">Visão geral</p>
+                                <p class="livro">O Diário de Anne Frank</p>
+                            </div>
+                            <div class="smallLineSquare">
+                                <div class="text">
+                                    <text class="disponivel">Disponíveis</text>
+                                    <text class="quant">5</text>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="resumo">O Diário de Anne Frank é um livro que relata a história de uma jovem judia chamada Anne Frank, que viveu durante a Segunda Guerra Mundial e se escondeu com sua família e outros judeus em um anexo secreto em Amsterdã, nos Países Baixos, para escapar da perseguição nazista. 
+                        </p>
+                        <div class="info-container">
+                            <div class="info-box">
+                                <text class="title-superior">Autor(a)</text>
+                                <img src="/Icons TCC/autora.png" class="img-icons">
+                                <text class="title-inferior">Anne Frank</text>
+                            </div>
+                            <div class="info-box">
+                                <text class="title-superior">Editora</text>
+                                <img src="/Icons TCC/editora.png" class="img-icons">
+                                <text class="title-inferior">Grupo Editorial Record</text>
+                            </div>
+                            <div class="info-box">
+                                <text class="title-superior">Gênero</text>
+                                <img src="/Icons TCC/genero.png" class="img-icons">
+                                <text class="title-inferior">Autobiográfico</text>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="line"></div>
-                <p class="info">Reservado por: Clara Oliveira da Silva</p>
-                <p class="info">Reserva realizada no dia: 12/03/2024</p>
-                <p class="info">Período da reserva: 12/03/2024 até 27/03/2024</p>
             </div>
+        </div>
+        <div class="editar">
+            <a href="/FUNCIONÁRIO(ADM)/perfil/"><button class="reserv-button">Reservar livro</button></a>
         </div>
     </div>
 </main>

@@ -223,8 +223,14 @@ main {
     width: 100%;
 }
 
+.book-list a {
+    text-decoration: none;
+    color: #000;
+}
+
 .book-item {
     width: 200px;
+    height: 225px;
     box-sizing: border-box; /* Inclui o padding e border no cálculo da largura total */
     max-width: calc(16.66% - 20px); /* Garante que o item não exceda 1/6 do espaço disponível */
     background: #FFF;
@@ -306,4 +312,22 @@ footer a {
 
 footer a:hover {
     color: #3F7263;
+}
+
+@media screen and (max-width: 1024px) {
+    .book-list {
+        max-width: 80%; /* Ajuste a largura máxima do contêiner de livros */
+    }
+    
+    .book-title {
+        font-size: 12px;
+    }
+    
+    .book-author {
+        font-size: 10px;
+    }
+    
+    .book-course {
+        font-size: 10px;
+    }
 }

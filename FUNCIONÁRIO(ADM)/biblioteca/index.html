@@ -35,7 +35,7 @@
     </div>
 
         <h1 class="biblioteca">Biblioteca</h1>
-        <button class="add-button">+ Adicionar</button>
+        <a href="#addModal"><button class="add-button">+ Adicionar</button></a>
     <div class="search-container">
         <input type="text" placeholder="Procurar" id="search-input">
         <button type="button"><span class="material-symbols-outlined">search</span></button>
@@ -45,7 +45,7 @@
     <div class="container">
             <div class="genre-buttons">
                 <div class="book-genre">
-                    <img src=""  class="icon">
+                    <img src="/Icons TCC/todos.png"  class="icon">
                     <p class="text-icon">Todos</p>
                 </div>  
                 <div class="book-genre">
@@ -79,7 +79,7 @@
             </div>
     
         <div class="book-list">
-            <a href="/FUNCIONÁRIO(ADM)/login/" class="book-item">
+            <a href="/FUNCIONÁRIO(ADM)/infoLivroBiblioteca/" class="book-item">
                 <img src="/Capa_dos_livros/o diário de anne frank.jpg" alt="O diário de Anne Frank" class="book-image">
                 <div class="book-info">
                     <h2 class="book-title">O diário de Anne Frank</h2>
@@ -193,5 +193,12 @@
             Desenvolvido por <a href="http://127.0.0.1:5500/FUNCION%C3%81RIO(ADM)/telaInicial/" target="_blank">books@gmail.com</a>
         </div>
     </footer>
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close-button">&times;</a>
+            <a href="/FUNCIONÁRIO(ADM)/addLivroExistente/"><button class="modal-button">Adicionar livro existente</button></a>
+            <a href="/FUNCIONÁRIO(ADM)/addLivroNovo/"><button class="modal-button">Adicionar livro novo</button></a>
+        </div>
+    </div>
 </body>
 </html>

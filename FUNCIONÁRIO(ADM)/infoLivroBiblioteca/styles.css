@@ -108,8 +108,31 @@ body {
     box-sizing: border-box;
 }
 
+.remov-button {
+    right: 50px;
+    top: 150px;
+    position: absolute;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #FF735C;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+}
+
+.add-button:hover {
+    opacity: 0.5;
+}
+
 .lineSquare {
-    width: 410px;
+    width: 40%;
     box-sizing: border-box;
     height: auto;
     border: 1px solid black;
@@ -122,10 +145,24 @@ body {
 }
 
 .img-reserva {
-    height: auto;
-    width: 50px;
+    height: 180px;
+    width: 120px;
     border-radius: 5px;
     margin: 15px;
+}
+
+.header-lineSquare {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.geral {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 0px;
 }
 
 .livro-info {
@@ -136,12 +173,38 @@ body {
     margin-top: 5px;
 }
 
+.livro {
+    margin-bottom: 0px;
+    margin-top: 3px;
+    font-size: 13.5px;
+}
+
+.smallLineSquare {
+    width: auto;
+    height: 10px;
+    box-sizing: border-box;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.text {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .line {
     width: 100%;
     box-sizing: border-box;
     height: auto;
     border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .form-container {
@@ -161,40 +224,46 @@ body {
     margin-left: 8px;
 }
 
-.p-usuario {
+.resumo {
+    margin-top: 3px;
+    font-size: 14px;
+    font-size: 13.5px;
+}
+
+.desc-prof {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 13px;
-    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 0px;
 }
 
-.opcao {
-    justify-content:space-evenly;
-    align-items: center;
-    display: flex;
-
-}
-
-.select-input {
-    width: 58%;
-    height: 40px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-    background-color: #fff;
+.desc-prof-curso {
     font-family: "Poppins", sans-serif;
-    margin: 14px;
-    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: 5px;
 }
 
-/* Opcional: Estilo para hover e focus */
-.select-input:hover,
-.select-input:focus {
-    border-color: #FF735C;
-    outline: none;
+.info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-icons {
+    height: auto;
+    width: 30px;
 }
 
 main {
@@ -207,24 +276,6 @@ main {
     text-align: center;
 }
 
-.parent-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.p-i-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
-    box-sizing: border-box;
-}
-
 .informacoes {
     font-size: 30px;
     font-family: "Poppins", sans-serif;
@@ -233,14 +284,6 @@ main {
     margin-top: 25px;
     margin-bottom: 15px;
     text-align: center;
-}
-
-.input-container {
-    width: 100%;
-}
-
-input[type="file"] {
-    display: none;
 }
 
 .text-input {
@@ -252,9 +295,58 @@ input[type="file"] {
     margin: 0 auto;
 }
 
-.confirm-button {
-    height: 50px;
-    width: 120px;
+.modulo-form {
+    display: flex;
+    gap: 34px;
+    margin-left: 12px;
+    margin-top: 6px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:checked {
+    border: 1px solid #3F7263;
+    background-color: #3F7263;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.editar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.reserv-button {
+    height: 45px;
+    padding: 10px 30px;
+    margin: 20px 0;
     background-color: #FF735C;
     color: white;
     border: none;
@@ -263,36 +355,11 @@ input[type="file"] {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 12px;
+    font-size: 16px;
 }
 
-.confirm-button:hover,
-.cancel-button:hover {
+.reserv-button:hover {
     opacity: 0.5;
-}
-
-.cancel-button {
-    height: 50px;
-    width: 120px;
-    background-color: #FFF;
-    color: black;
-    border: 1px solid black;
-    border-radius: 30px;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12px;
-}
-
-.obs {
-    font-size: 12px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #8a8a8a;
-    margin-top: 20px;
-    margin-bottom: 5px;
 }
 
 footer {

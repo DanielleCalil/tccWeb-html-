@@ -1,8 +1,14 @@
-body, html {
+html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 .header {
@@ -91,14 +97,150 @@ body, html {
     color: red;
 }
 
-.conteudo {
-    text-align: center;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 95%;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.content-wrapper {
+.lineSquare {
+    width: 40%;
+    box-sizing: border-box;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.info-book-reserva {
+    display: flex;
+}
+
+.img-reserva {
+    height: 180px;
+    width: 120px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.header-lineSquare {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.geral {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.livro-info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.livro {
+    margin-bottom: 0px;
+    margin-top: 3px;
+    font-size: 13.5px;
+}
+
+.smallLineSquare {
+    width: auto;
+    height: 10px;
+    box-sizing: border-box;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.text {
+    text-align: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    min-height: calc(89vh - 79px); /* Altura do cabeçalho e rodapé */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.line {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin: 10px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 50%;
+}
+
+.info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.resumo {
+    margin-top: 3px;
+    font-size: 14px;
+    font-size: 13.5px;
+}
+
+.desc-prof {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.desc-prof-curso {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-icons {
+    height: auto;
+    width: 30px;
 }
 
 main {
@@ -107,25 +249,11 @@ main {
     box-sizing: border-box;
 }
 
-.parent-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+.conteudo {
+    text-align: center;
 }
 
-.p-i-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
-    box-sizing: border-box;
-}
-
-.perfil {
+.informacoes {
     font-size: 30px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -133,37 +261,6 @@ main {
     margin-top: 25px;
     margin-bottom: 15px;
     text-align: center;
-}
-
-.profile-container {
-    text-align: center;
-    margin-right: 150px;
-}
-
-.img-container {
-    margin-bottom: 20px;
-}
-
-.img-container img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ccc;
-}
-
-.input-container {
-    width: 100%;
-}
-
-input[type="file"] {
-    display: none;
-}
-
-.input-group {
-    flex-direction: column;
-    margin-bottom: 10px;
-    display: flex;
 }
 
 .text-input {
@@ -175,41 +272,15 @@ input[type="file"] {
     margin: 0 auto;
 }
 
-.input-field {
-    width: 100%;
-    height: 45px;
-    padding: 20px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    box-sizing: border-box; 
-}
-
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.sexo-form {
+.modulo-form {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 12px;
+    gap: 34px;
+    margin-left: 12px;
+    margin-top: 6px;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    font-size: 14px;
-}
-
-.sexo-form legend {
-    margin: 0;
-    padding-right: 10px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 input[type="radio"] {
@@ -226,8 +297,8 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    border: 1px solid #FF735C;
-    background-color: #FF735C;
+    border: 1px solid #3F7263;
+    background-color: #3F7263;
 }
 
 input[type="radio"]:checked::before {
@@ -243,33 +314,15 @@ input[type="radio"]:checked::before {
     transform: translate(-50%, -50%);
 }
 
-.redefinir {
-    color: #FF735C;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 12px;
-    margin-top: 25px;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-a {
-    color: #FF735C;
-}
-
 .editar {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    align-items: flex-end;
-    flex: 1;
-    padding-right: 20;
-    padding-bottom: 10;
 }
 
-.cadastro-button {
-    width: 60px;
-    height: 60px;
-    padding: 10px;
+.reserv-button {
+    height: 45px;
+    padding: 10px 30px;
     margin: 20px 0;
     background-color: #FF735C;
     color: white;
@@ -279,19 +332,11 @@ a {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px; 
-    position: absolute;
-    right: 70px;
-    bottom: 50px;
+    font-size: 16px;
 }
 
-.cadastro-button:hover {
-    background-color: #3F7263;
-}
-
-.cadastro-button img {
-    height: auto;
-    width: 40px;
+.reserv-button:hover {
+    opacity: 0.5;
 }
 
 footer {

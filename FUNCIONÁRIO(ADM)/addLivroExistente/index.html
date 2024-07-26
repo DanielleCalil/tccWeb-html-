@@ -24,31 +24,47 @@
                 <li><a href="/FUNCIONÁRIO(ADM)/perfil/"><span class="material-symbols-outlined">person</span>Perfil</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/selecao/"><span class="material-symbols-outlined">signpost</span>Seleção</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/recomendacao/"><span class="material-symbols-outlined">star</span>Recomendações</a></li>
-                <li><a href="/FUNCIONÁRIO(ADM)/biblioteca/"><span class="material-symbols-outlined">menu_book</span>Biblioteca</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/biblioteca/" class="active"><span class="material-symbols-outlined">menu_book</span>Biblioteca</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/reservas/"><span class="material-symbols-outlined">calendar_month</span>Reservas</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/notificacoes/"><span class="material-symbols-outlined">notifications</span>Notificações</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/emprestimos/"><span class="material-symbols-outlined">book_2</span>Empréstimos</a></li>
-                <li><a href="/FUNCIONÁRIO(ADM)/infoContato/"  class="active"><span class="material-symbols-outlined">info</span>Informações</a></li>
+                <li><a href="/FUNCIONÁRIO(ADM)/infoContato/"><span class="material-symbols-outlined">info</span>Informações</a></li>
                 <li><a href="/FUNCIONÁRIO(ADM)/login/" class="sair"><span class="material-symbols-outlined">logout</span>Sair</a></li>
             </ul>
         </nav>
     </div>
 
 <main>
-    <h1 class="contato">Informações de Contato</h1>
+    <h1 class="add-livro-existente">Adicionar livro existente</h1>
 
     <div class="container">
-        <img src="/imagens_telas/contato.jpg" alt="Imagem tela contatos" class="img-contato">
-        <p class="escola">ETEC PROF. MASSUYUKI KAWANO</p>
-        <text class="infos">(14) 3496 1520 - (14) 3491 5393 <br>
-                RUA: BEZERRA DE MENEZES, 215 <br>
-                CEP 17605-440 <br>
-                E136DIR@CPS.SP.GOV.BR</text>
-    </div>
-    <div class="editar">
-        <a href="/FUNCIONÁRIO(ADM)/infoContatoEditar/"><button type="submit" class="cadastro-button"><img src="/imagens_telas/editar_perfil.png"></button></a>
+        <div>
+            <p class="p-usuario"> Selecione o livro:</p>
+            <div class="opcao">
+                <select id="options" class="select-input">
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="OdiáriodeAnneFrank(AnneFrank)">O diário de Anne Frank - Anne Frank</option>
+                    <option value="DomCasmurro(MachadodeAssis)">Dom Casmurro - Machado de Assis</option>
+                    <option value="RomeueJulieta(WilliamShakespeare)">Romeu e Julieta - William Shakespeare</option>
+                    <option value="1984(GeorgeOrwell)">1984 - George Orwell</option>
+                    <option value="OsMiseráveis(VictorHugo)">Os Miseráveis - Victor Hugo</option>
+                    <option value="OrgulhoePreconceito(JaneAusten)">Orgulho e Preconceito - Jane Austen</option>
+                    <option value="Verity(CollenHoover)">Verity - Collen Hoover</option>
+                    <option value="Heartstopper(AliceOseman)">Heartstopper - Alice Oseman</option>
+                    <option value="Deixadaparatrás(CharlieDonlea)">Deixada para trás - Charlie Donlea</option>
+                    <option value="Arevoluçãodosbichos(GeorgeOrwell)">A revolução dos bichos - George Orwell</option>
+                    <option value="Procurenascinzas(CharlieDonlea)">Procure nas cinzas - Charlie Donlea</option>
+                    <option value="HarryPottereaPedraFilosofal(J.K.Rowling)">Harry Potter e a Pedra Filosofal - J.K. Rowling</option>
+                    <option value="Ossetemaridosdeevelynhugo(TaylorJekinsReid)">Os Sete Maridos de Evelyn Hugo - Taylor Jekins Reid</option>
+                    <option value="Agarotadolago(CharlieDonlea)">A Garota do Lago - Charlie Donlea</option>
+                    <option value="Dracula(BramStoker)">Drácula - Bram Stoker</option>
+                </select>
+        </div>
     </div>
 </main>
+    <div class="editar">
+        <a href="/FUNCIONÁRIO(ADM)/biblioteca/"><button class="add-button">Adicionar</button></a>
+    </div>
     <footer>
         <div>
             Desenvolvido por <a href="http://127.0.0.1:5500/FUNCION%C3%81RIO(ADM)/telaInicial/" target="_blank">books@gmail.com</a>
