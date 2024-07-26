@@ -120,6 +120,26 @@ body {
     opacity: 0.5;
 }
 
+.icon {
+    height: auto;
+    width: 40px;
+    margin-bottom: 0px;
+}
+
+.text-icon {
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 0px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -182,7 +202,7 @@ body {
     flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
     gap: 10px; /* Espaçamento entre os livros */
     justify-content: center;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 30px;
     cursor: pointer;
@@ -190,11 +210,11 @@ body {
 }
 
 .book-genre {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     box-sizing: border-box; /* Inclui o padding e border no cálculo da largura total */
     max-width: calc(16.66% - 20px); /* Garante que o item não exceda 1/6 do espaço disponível */
-    background: #3F7263;
+    background: #599684;
     padding: 4px; /* Adiciona um padding interno */
     border-radius: 8px;
     text-align: center;
