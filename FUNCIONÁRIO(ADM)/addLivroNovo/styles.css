@@ -104,54 +104,108 @@ main {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    max-width: 95%;
+    width: 100%;
     margin: 0 auto;
-    gap: 10px;
     padding: 20px;
     box-sizing: border-box;
 }
 
-.p-usuario {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    text-align: center;
-    margin: 2px;
-}
-
-.opcao {
-    justify-content: center;
-    align-items: center;
+.input-total {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
 }
 
-.select-input {
-    width: 600px;
-    height: 40px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-    background-color: #fff;
+.input-container {
+    width: 50%;
+    justify-content: center;
+}
+
+.input-img-container {
+    width: 50%;
+    justify-content: center;
+    
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    font-size: 14px;
+    background-color: #3F7263;
+    color: white;
+    border: 1px solid #3F7263;
+    border-radius: 30px;
+    cursor: pointer;
+    
     font-family: "Poppins", sans-serif;
-    margin: 14px;
-    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* Opcional: Estilo para hover e focus */
-.select-input:hover,
-.select-input:focus {
-    border-color: #FF735C;
-    outline: none;
+.upload-button:hover {
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
-.add-livro-existente {
+.input-group {
+    flex-direction: column;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.input-field {
+    width: 40%;
+    height: 45px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box; 
+}
+
+.input-resumo {
+    width: 40%;
+    height: 200px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box; 
+}
+
+.input-quant {
+    width: 20%;
+    height: 45px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box; 
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.add-livro-novo {
     font-size: 30px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -159,35 +213,6 @@ main {
     margin-top: 25px;
     margin-bottom: 15px;
     text-align: center;
-}
-
-.horario {
-    color: #CCC;
-    margin-top: 3px;
-    margin-bottom: 5px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 12px;
-}
-
-.notify {
-    display: flex;
-    flex-direction: row;
-    margin: 3px;
-}
-
-.aviso {
-    height: auto;
-    width: 50px;
-    margin-right: 5px;
-}
-
-.mensagem {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 14px;
 }
 
 .editar {
