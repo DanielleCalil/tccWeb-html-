@@ -36,7 +36,7 @@
 
 <main>
     <h1 class="informacoes">Informações do livro</h1>
-    <button class="remov-button">- Remover</button>
+    <a href="#addModal"><button class="remov-button">- Remover</button></a>
     <div class="container">
         <div class="lineSquare">
             <div class="input-container">
@@ -80,7 +80,7 @@
             </div>
         </div>
         <div class="editar">
-            <a href="/FUNCIONÁRIO(ADM)/perfil/"><button class="reserv-button">Reservar livro</button></a>
+            <a href="/FUNCIONÁRIO(ADM)/reservarLivro/"><button class="reserv-button">Reservar livro</button></a>
         </div>
     </div>
 </main>
@@ -89,5 +89,15 @@
             Desenvolvido por <a href="http://127.0.0.1:5500/FUNCION%C3%81RIO(ADM)/telaInicial/" target="_blank">books@gmail.com</a>
         </div>
     </footer>
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close-button">&times;</a>
+            <p class="text-modal">Tem certeza que deseja excluir este livro?</p>
+            <div class="buttons">
+                <a href="/FUNCIONÁRIO(ADM)/biblioteca/"><button class="modal-button-sim">Sim</button></a>
+                <a href="/FUNCIONÁRIO(ADM)/infoLivroBiblioteca/"><button class="modal-button-não">Não</button></a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
