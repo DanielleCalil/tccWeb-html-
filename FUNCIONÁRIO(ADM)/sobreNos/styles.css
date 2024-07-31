@@ -16,14 +16,27 @@ body, html {
     display: flex;
 }
 
-.box {
-    height: 400px; 
+.card {
+    background-color:  rgba(255, 255, 255, 0.767);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 450px;
+    max-width: 60%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .box {
+    height: 450px; 
     background-color: #FFF; 
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .conteudo {
     align-items: center;
@@ -40,19 +53,20 @@ body, html {
     text-align: center;
     font-size: 0.875rem;
     max-width: 40%;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .membros-container {
-    max-width: 60%;
     display: flex;
     flex-direction: row;
+    margin: 20px;
     
 }
 
 .membros {
     text-align: justify;
-    margin: 15px;
+    padding: 15px;
     font-size: 0.875rem;
 }
 
