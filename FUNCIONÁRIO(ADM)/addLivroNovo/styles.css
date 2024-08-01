@@ -98,6 +98,16 @@ main {
     width: 100%;
 }
 
+.add-livro-novo {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .container {
     justify-content: center;
     width: 100%;
@@ -120,28 +130,12 @@ main {
     margin-right: 150px;
 }
 
-.input-container {
-    width: 40%;
-}
-
-.text {
-    margin-top: 25px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 14px;
-}
-
 .text-capa {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 14px;
     margin-top: 0px;
-}
-
-input[type="file"] {
-    display: none;
 }
 
 .upload-button {
@@ -163,11 +157,47 @@ input[type="file"] {
     transition: 0.5s;
 }
 
+input[type="file"] {
+    display: none;
+}
+
+.input-wrapper {
+    margin-bottom: 10px;
+}
+
 .input-group {
     flex-direction: column;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
+}
+
+.text {
+    margin-top: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.input-quant {
+    width: 40%;
+    height: 45px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box; 
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-container {
+    width: 40%;
 }
 
 .text-input {
@@ -196,36 +226,6 @@ input[type="file"] {
     border: 1px solid #ccc;
     border-radius: 30px;
     box-sizing: border-box; 
-}
-
-.input-quant {
-    width: 40%;
-    height: 45px;
-    padding: 20px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    box-sizing: border-box; 
-}
-
-.input-wrapper {
-    margin-bottom: 10px;
-}
-
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.add-livro-novo {
-    font-size: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    text-align: center;
 }
 
 .editar {

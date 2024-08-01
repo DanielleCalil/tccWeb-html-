@@ -108,6 +108,33 @@ body {
     box-sizing: border-box;
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 16px;
+}
+
+.search-container input {
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    width: 42%;
+    margin-left: 10px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
 .lineSquare {
     width: 410px;
     box-sizing: border-box;
