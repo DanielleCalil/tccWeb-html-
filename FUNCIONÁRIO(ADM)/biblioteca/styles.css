@@ -18,7 +18,7 @@ body {
 
 .retangGreen {
     width: 100%;
-    height: 65px;
+    height: 4.063rem;
     background-color: #3F7263;
     display: flex;
     justify-content: center;
@@ -27,22 +27,22 @@ body {
 }
 
 .imgLogo {
-    height: 55px;
-    width: 70px;
+    height: 3.438rem;
+    width: 4.375rem;
 }
 
 .imgEtec {
-    height: 35px;
-    width: 85px;
+    height: 2.188rem;
+    width: 5.313rem;
     position: absolute;
     right: 0;
-    bottom: 12px;
-    margin-right: 30px;
+    bottom: 0.75rem;
+    margin-right: 1.875rem;
 }
 
 .retangOrange {
     width: 100%;
-    height: 14px; 
+    height: 0.875rem; 
     background-color: #FF735C;
 }
 
@@ -76,7 +76,7 @@ body {
     justify-content: center;
     color: black;
     text-align: center;
-    padding: 12px 14px;
+    padding: 0.75rem 0.875rem;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -84,8 +84,8 @@ body {
 }
 
 .navbar ul li a i {
-    font-size: 22px;
-    margin-right: 8px;
+    font-size: 1.375rem;
+    margin-right: 0.5rem;
 }
 
 .navbar ul li a.active {
@@ -97,22 +97,38 @@ body {
     color: red;
 }
 
+main {
+    flex: 1;
+    padding: 1.25rem;
+    box-sizing: border-box;
+}
+
+.biblioteca {
+    font-size: 1.875rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 1.563rem;
+    margin-bottom: 0.938rem;
+    text-align: center;
+}
+
 .add-button {
-    right: 50px;
-    top: 150px;
+    right: 3.125rem;
+    top: 9.375rem;
     position: absolute;
-    height: 40px;
-    padding: 10px 20px;
-    margin: 20px 0;
+    height: 2.5rem;
+    padding: 0.625rem 1.25rem;
+    margin: 1.25rem 0;
     background-color: #3F7263;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
 }
 
@@ -120,24 +136,31 @@ body {
     opacity: 0.5;
 }
 
-.icon {
-    height: auto;
-    width: 40px;
-    margin-bottom: 0px;
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1rem;
 }
 
-.text-icon {
-    font-size: 10px;
+.search-container input {
+    padding-left: 1.25rem;
+    padding-top: 0.438rem;
+    padding-bottom: 0.438rem;
+    font-size: 1.063rem;
+    border: 1px solid #ccc;
+    border-radius: 1.875rem;
+    outline: none;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    margin-top: 0px;
+    width: 42%;
+    margin-left: 0.625rem;
 }
 
-main {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
 }
 
 .container {
@@ -146,103 +169,65 @@ main {
     justify-content: center;
     max-width: 95%;
     margin: 0 auto;
-    gap: 10px;
-    padding: 20px;
+    gap: 0.625rem;
+    padding: 1.25rem;
     box-sizing: border-box;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 16px;
-}
-
-.search-container input {
-    padding-left: 20px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-size: 17px;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    outline: none;
-    font-family: "Poppins", sans-serif;
-    width: 42%;
-    margin-left: 10px;
-}
-
-.search-container button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: 8px;
-}
-
-.book-genre-container {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 20px;
-    display: flex;
-    gap: 10px; /* Espaçamento entre os livros */
-    justify-content: center;
-    max-width: 70%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    cursor: pointer;
-    width: 100%;
 }
 
 .genre-buttons {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
     flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
-    gap: 10px; /* Espaçamento entre os livros */
+    gap: 0.625rem; /* Espaçamento entre os livros */
     justify-content: center;
     max-width: 100%;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     cursor: pointer;
     width: 100%;
 }
 
 .book-genre {
-    width: 90px;
-    height: 90px;
+    width: 5.625rem;
+    height: 5.625rem;
     box-sizing: border-box; /* Inclui o padding e border no cálculo da largura total */
-    max-width: calc(16.66% - 20px); /* Garante que o item não exceda 1/6 do espaço disponível */
+    max-width: calc(16.66% - 1.25rem); /* Garante que o item não exceda 1/6 do espaço disponível */
     background: #599684;
-    padding: 4px; /* Adiciona um padding interno */
-    border-radius: 8px;
+    padding: 0.25rem; /* Adiciona um padding interno */
+    border-radius: 0.5rem;
     text-align: center;
     box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.288); /* Adiciona uma sombra leve ao redor dos itens */
 }
 
-.genre-button:hover, .genre-button:focus {
-    background-color: #45a049;
+.icon {
+    height: auto;
+    width: 2.5rem;
+    margin-bottom: 0;
 }
 
-.genre-button:active {
-    background-color: #3e8e41; /* Cor de fundo mais escura para indicar o clique */
-    box-shadow: 0 5px #666;    /* Sombra para parecer afundado */
-    transform: translateY(4px); /* Move o botão para baixo */
+.text-icon {
+    font-size: 0.625rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 0;
 }
 
 .book-list {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
     flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
-    gap: 10px; /* Espaçamento entre os livros */
+    gap: 0.625rem; /* Espaçamento entre os livros */
     justify-content: center;
     max-width: 98%;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     cursor: pointer;
     width: 100%;
 }
@@ -253,55 +238,41 @@ main {
 }
 
 .book-item {
-    width: 200px;
-    height: 225px;
+    width: 12.5rem;
+    height: 14.063rem;
     box-sizing: border-box; /* Inclui o padding e border no cálculo da largura total */
-    max-width: calc(16.66% - 20px); /* Garante que o item não exceda 1/6 do espaço disponível */
+    max-width: calc(16.66% - 1.25rem); /* Garante que o item não exceda 1/6 do espaço disponível */
     background: #FFF;
-    padding: 4px; /* Adiciona um padding interno */
-    border-radius: 8px;
+    padding: 0.25rem; /* Adiciona um padding interno */
+    border-radius: 0.5rem;
     text-align: center;
     box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.288); /* Adiciona uma sombra leve ao redor dos itens */
-}
-
-.book-image {
-    width: 45%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 10px;
 }
 
 .book-item:hover {
     transform: scale(1.05);
 }
 
+.book-image {
+    width: 45%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 0.625rem;
+}
+
 .book-info {
-    padding: 1px;
+    padding: 0.063rem;
 }
 
 .book-title {
-    font-size: 14px;
-    margin: 0 0 4px;
+    font-size: 0.875rem;
+    margin: 0 0 0.25rem;
 }
 
 .book-author {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #555;
     margin: 0;
-}
-
-.conteudo {
-    text-align: center;
-}
-
-.biblioteca {
-    font-size: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    text-align: center;
 }
 
 footer {
@@ -311,14 +282,15 @@ footer {
 	width: 100%;
 	color:#000;
 	text-align: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	font-style: normal;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.288);
-    font-size: 14px;
+    font-size: 0.875rem;
 }
+
 footer a {
     color: #FF735C;
     text-decoration: none;
@@ -347,18 +319,18 @@ footer a:hover {
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 20px;
+    padding: 1.25rem;
     border: 1px solid #888;
     width: 80%;
-    max-width: 300px;
+    max-width: 18.75rem;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .close-button {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: bold;
 }
 
@@ -373,14 +345,14 @@ footer a:hover {
     background-color: #FF735C;
     color: white;
     border: none;
-    padding: 10px 20px;
-    margin: 10px 0;
-    border-radius: 30px;
+    padding: 0.625rem 1.25rem;
+    margin: 0.625rem 0;
+    border-radius: 1.875rem;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 0.875rem;
     display: block;
     width: 100%;
 }
@@ -393,9 +365,9 @@ footer a:hover {
     text-decoration: none;
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .book-list {
-        max-width: 80%; /* Ajuste a largura máxima do contêiner de livros */
+        max-width: 80%;
     }
     
     .book-title {
@@ -409,4 +381,4 @@ footer a:hover {
     .book-course {
         font-size: 10px;
     }
-}
+} */

@@ -30,54 +30,47 @@ body, html {
 }
 
 .imgEsqSenha {
-    width: 350px;
-    height: 350px;
-}
-
-.redefinirSenha {
-    font-size: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    margin-top: 10;
-    margin-bottom: 15px;
-}
-
-.texto {
-    font-size: 14px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+    width: 21.875rem;
+    height: 21.875rem;
 }
 
 .conteudo {
     text-align: center;
 }
 
+.redefinirSenha {
+    font-size: 1.875rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 0.625rem;
+    margin-bottom: 0.938rem;
+}
+
+.texto {
+    font-size: 0.875rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .input-field {
     width: 65%;
-    height: 45px;
-    padding: 20px;
-    margin: 10px 0;
+    height: 2.813rem;
+    padding: 1.25rem;
+    margin: 0.625rem 0;
     border: 1px solid #ccc;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     box-sizing: border-box; /* Garante que o padding não ultrapasse a largura do container */
 }
 
 .input-field::placeholder {
     color: #999;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     opacity: 1;
-}
-
-/* Remove as setas do input de número */
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 .logar {
@@ -85,9 +78,9 @@ input[type=number]::-webkit-inner-spin-button {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 12px;
-    margin-top: 25px;
-    margin-bottom: 5px;
+    font-size: 0.75rem;
+    margin-top: 1.563rem;
+    margin-bottom: 0.313rem;
 }
 
 a {
@@ -96,18 +89,18 @@ a {
 
 .redefinir-button {
     width: 20%;
-    height: 45px;
-    padding: 10px;
-    margin: 20px 0;
+    height: 2.813rem;
+    padding: 0.625rem;
+    margin: 1.25rem 0;
     background-color: #FF735C;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .redefinir-button:hover {

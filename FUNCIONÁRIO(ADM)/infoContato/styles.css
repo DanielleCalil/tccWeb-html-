@@ -103,6 +103,16 @@ main {
     box-sizing: border-box;
 }
 
+.contato {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -113,16 +123,6 @@ main {
     gap: 10px;
     padding: 20px;
     box-sizing: border-box;
-}
-
-.contato {
-    font-size: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    text-align: center;
 }
 
 .img-contato {
@@ -152,7 +152,7 @@ main {
     padding-bottom: 10;
 }
 
-.cadastro-button {
+.editar-button {
     width: 60px;
     height: 60px;
     padding: 10px;
@@ -171,11 +171,11 @@ main {
     bottom: 50px;
 }
 
-.cadastro-button:hover {
+.editar-button:hover {
     background-color: #3F7263;
 }
 
-.cadastro-button img {
+.editar-button img {
     height: auto;
     width: 40px;
 }
