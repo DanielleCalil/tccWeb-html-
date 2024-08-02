@@ -97,6 +97,22 @@ body {
     color: red;
 }
 
+main {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.informacoes {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +144,14 @@ body {
     margin: 15px;
 }
 
+.livro-info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 .header-lineSquare {
     display: flex;
     flex-direction: row;
@@ -140,14 +164,6 @@ body {
     font-style: normal;
     font-size: 16px;
     margin-bottom: 0px;
-}
-
-.livro-info {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12px;
-    margin-top: 5px;
 }
 
 .livro {
@@ -176,53 +192,10 @@ body {
     margin-bottom: 0px;
 }
 
-.line {
-    width: 100%;
-    box-sizing: border-box;
-    height: auto;
-    border-bottom: 1px solid #ccc;
-    margin: 10px;
-}
-
-.form-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 50%;
-}
-
-.info {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 13px;
-    margin-left: 8px;
-}
-
 .resumo {
     margin-top: 3px;
     font-size: 14px;
     font-size: 13.5px;
-}
-
-.desc-prof {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 13px;
-    margin-left: 15px;
-    margin-bottom: 0px;
-}
-
-.desc-prof-curso {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 13px;
-    margin-left: 15px;
-    margin-top: 5px;
 }
 
 .info-container {
@@ -243,33 +216,30 @@ body {
     width: 30px;
 }
 
-main {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.conteudo {
-    text-align: center;
-}
-
-.informacoes {
-    font-size: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.text-input {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 14px;
+.line {
     width: 100%;
-    margin: 0 auto;
+    box-sizing: border-box;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin: 10px;
+}
+
+.desc-prof {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.desc-prof-curso {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: 5px;
 }
 
 .modulo-form {
@@ -282,6 +252,47 @@ main {
     font-style: normal;
     font-size: 13px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.conteudo {
+    text-align: center;
+}
+
+
+
+.text-input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 
 input[type="radio"] {
     appearance: none;

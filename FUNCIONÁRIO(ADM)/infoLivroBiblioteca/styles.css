@@ -42,7 +42,7 @@ body {
 
 .retangOrange {
     width: 100%;
-    height: 14px; 
+    height: 0.875rem; 
     background-color: #FF735C;
 }
 
@@ -76,7 +76,7 @@ body {
     justify-content: center;
     color: black;
     text-align: center;
-    padding: 12px 14px;
+    padding: 0.75rem 0.875rem;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -84,8 +84,8 @@ body {
 }
 
 .navbar ul li a i {
-    font-size: 22px;
-    margin-right: 8px;
+    font-size: 1.375rem;
+    margin-right: 0.5rem;
 }
 
 .navbar ul li a.active {
@@ -99,36 +99,36 @@ body {
 
 main {
     flex: 1;
-    padding: 20px;
+    padding: 1.25rem;
     box-sizing: border-box;
 }
 
 .informacoes {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin-top: 1.563rem;
+    margin-bottom: 0.938rem;
     text-align: center;
 }
 
 .remov-button {
-    right: 50px;
-    top: 150px;
+    right: 3.125rem;
+    top: 9.375rem;
     position: absolute;
-    height: 40px;
-    padding: 10px 20px;
-    margin: 20px 0;
+    height: 2.5rem;
+    padding: 0.625rem 1.25rem;
+    margin: 1.25rem 0;
     background-color: #FF735C;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
 }
 
@@ -138,8 +138,8 @@ main {
     justify-content: center;
     max-width: 95%;
     margin: 0 auto;
-    gap: 10px;
-    padding: 20px;
+    gap: 0.625rem;
+    padding: 1.25rem;
     box-sizing: border-box;
 }
 
@@ -148,8 +148,8 @@ main {
     box-sizing: border-box;
     height: auto;
     border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
 }
 
 .info-book-reserva {
@@ -157,18 +157,18 @@ main {
 }
 
 .img-reserva {
-    height: 180px;
-    width: 120px;
-    border-radius: 5px;
-    margin: 15px;
+    height: 11.25rem;
+    width: 7.5rem;
+    border-radius: 0.313rem;
+    margin: 0.938rem;
 }
 
 .livro-info {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 12px;
-    margin-top: 5px;
+    font-size: 0.75rem;
+    margin-top: 0.313rem;
 }
 
 .header-lineSquare {
@@ -181,25 +181,25 @@ main {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 16px;
-    margin-bottom: 0px;
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .livro {
-    margin-bottom: 0px;
-    margin-top: 3px;
-    font-size: 13.5px;
+    margin-bottom: 0;
+    margin-top: 0.188rem;
+    font-size: 0.844rem;
 }
 
 .smallLineSquare {
     width: auto;
-    height: 10px;
+    height: 0.625rem;
     box-sizing: border-box;
     height: auto;
     border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 0px;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
+    margin-bottom: 0;
 }
 
 .text {
@@ -207,14 +207,14 @@ main {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .resumo {
-    margin-top: 3px;
-    font-size: 14px;
-    font-size: 13.5px;
+    margin-top: 0.188rem;
+    font-size: 0.875rem;
+    font-size: 0.844rem;
 }
 
 .info-container {
@@ -232,7 +232,7 @@ main {
 
 .img-icons {
     height: auto;
-    width: 30px;
+    width: 1.875rem;
 }
 
 .editar {
@@ -242,18 +242,18 @@ main {
 }
 
 .reserv-button {
-    height: 45px;
-    padding: 10px 30px;
-    margin: 20px 0;
+    height: 2.813rem;
+    padding: 0.625rem 1.875rem;
+    margin: 1.25rem 0;
     background-color: #FF735C;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .reserv-button:hover {
@@ -267,13 +267,13 @@ footer {
 	width: 100%;
 	color:#000;
 	text-align: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	font-style: normal;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.288);
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 footer a {
     color: #FF735C;
@@ -303,18 +303,18 @@ footer a:hover {
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 20px;
+    padding: 1.25rem;
     border: 1px solid #888;
     width: 80%;
-    max-width: 300px;
+    max-width: 18.75rem;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .close-button {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: bold;
 }
 
@@ -329,8 +329,8 @@ footer a:hover {
     font-family: "Poppins", sans-serif;
 	font-weight: 600;
 	font-style: normal;
-    font-size: 18px;
-    margin-top: 30px;
+    font-size: 1.125rem;
+    margin-top: 1.875rem;
 }
 
 .buttons {
@@ -344,14 +344,14 @@ footer a:hover {
     background-color: #FF735C;
     color: #000;
     border: none;
-    padding: 10px 30px;
-    margin: 10px 0;
-    border-radius: 30px;
+    padding: 0.625rem 1.875rem;
+    margin: 0.625rem 0;
+    border-radius: 1.875rem;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
     display: block;
     width: 100%;
 }
@@ -364,14 +364,14 @@ footer a:hover {
     background-color: #FFF;
     color: #000;
     border: 1px  solid #000;
-    padding: 10px 30px;
-    margin: 10px 0;
-    border-radius: 30px;
+    padding: 0.625rem 1.875rem;
+    margin: 0.625rem 0;
+    border-radius: 1.875rem;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
     display: block;
     width: 100%;
 }
