@@ -264,8 +264,8 @@ input[type="radio"]:checked::before {
     font-weight: 300;
     font-style: normal;
     font-size: 0.75rem;
-    margin-top: 25px;
-    margin-bottom: 5px;
+    margin-top: 1.563rem;
+    margin-bottom: 0.313rem;
     text-align: center;
 }
 
@@ -280,18 +280,18 @@ a {
 }
 
 .save-button {
-    height: 45px;
-    padding: 10px 30px;
-    margin: 20px 0;
+    height: 2.813rem;
+    padding: 0.625rem 1.875rem;
+    margin: 1.25rem 0;
     background-color: #FF735C;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .save-button:hover {
@@ -305,13 +305,13 @@ footer {
 	width: 100%;
 	color:#000;
 	text-align: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	font-style: normal;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.288);
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 footer a {
     color: #FF735C;
