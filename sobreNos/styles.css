@@ -8,7 +8,7 @@ body, html {
 .background {
     width: 100%;
     height: 100%;
-    background-image: url('/imagens_telas/background.png');
+    background-image: url('/imagens_telas/back.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -16,6 +16,15 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.transparencia {
+    background-color: rgba(255, 255, 255, 0.096);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center; 
 }
 
 .conteudo {
@@ -29,9 +38,9 @@ body, html {
 }
 
 .card {
-    background-color:  #ffffffd8;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    background-color:  #ffffffe3;
+    border-radius: 4rem;
+    box-shadow: 30px 30px 30px rgb(0, 0, 0); /* Sombra ao redor de todo o elemento */
     overflow: hidden;
     height: auto;
     max-width: 60%;
@@ -40,10 +49,7 @@ body, html {
     justify-content: center;
     text-align: center;
     color: black;
-}
-
-.transparencia {
-    
+    transition: box-shadow 0.3s ease;
 }
 
 .header {
