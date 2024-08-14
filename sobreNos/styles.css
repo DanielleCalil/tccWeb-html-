@@ -82,6 +82,13 @@ body, html {
     font-size: 1.125rem;
 }
 
+.imagem-flutuante {
+    float: left; /* Ou use 'right' se preferir que a imagem flutue à direita */
+    margin: 0.450rem 0.6rem 0.2rem 0; /* Margem ao redor da imagem para espaçamento entre a imagem e o texto */
+    max-width: 95px; /* Ajuste o tamanho da imagem conforme necessário */
+    border-radius: 0.5rem; /* Adicione borda arredondada se desejar */
+}
+
 .nome {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
