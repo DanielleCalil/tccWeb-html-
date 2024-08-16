@@ -177,9 +177,10 @@ input[type="file"] {
     height: 2.813rem;
     padding: 1.25rem;
     margin: 0.625rem 0;
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     border-radius: 1.875rem;
     box-sizing: border-box; 
+    background-color: #FFF;
 }
 
 input[type=number]::-webkit-outer-spin-button,
