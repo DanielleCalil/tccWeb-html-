@@ -69,7 +69,7 @@ body, html {
     border: 1px solid #ccc;
     border-radius: 1.875rem;
     flex-direction: column;
-    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura do container */
+    box-sizing: border-box;
 }
 
 .input-field::placeholder {
@@ -89,7 +89,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 a {
-    color: #FF735C; /* Cor do texto */
+    color: #FF735C;
 }
 
 .redefinir-button {

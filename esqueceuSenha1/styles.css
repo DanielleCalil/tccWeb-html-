@@ -61,7 +61,7 @@ body, html {
     margin: 0.625rem 0;
     border: 1px solid #ccc;
     border-radius: 1.875rem;
-    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura do container */
+    box-sizing: border-box;
 }
 
 .input-field::placeholder {
@@ -84,7 +84,7 @@ body, html {
 }
 
 a {
-    color: #FF735C; /* Cor do texto */
+    color: #FF735C;
 }
 
 .redefinir-button {

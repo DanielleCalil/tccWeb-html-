@@ -40,7 +40,7 @@ body, html {
 .card {
     background-color:  #ffffffe3;
     border-radius: 4rem;
-    box-shadow: 30px 30px 30px rgb(0, 0, 0); /* Sombra ao redor de todo o elemento */
+    box-shadow: 30px 30px 30px rgb(0, 0, 0);
     overflow: hidden;
     height: auto;
     max-width: 60%;
@@ -83,10 +83,10 @@ body, html {
 }
 
 .imagem-flutuante {
-    float: left; /* Ou use 'right' se preferir que a imagem flutue à direita */
-    margin: 0.450rem 0.6rem 0.2rem 0; /* Margem ao redor da imagem para espaçamento entre a imagem e o texto */
-    max-width: 95px; /* Ajuste o tamanho da imagem conforme necessário */
-    border-radius: 0.5rem; /* Adicione borda arredondada se desejar */
+    float: left;
+    margin: 0.450rem 0.6rem 0.2rem 0;
+    max-width: 95px;
+    border-radius: 0.5rem;
 }
 
 .nome {

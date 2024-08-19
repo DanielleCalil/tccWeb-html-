@@ -133,7 +133,6 @@ input[type="file"] {
     display: none;
 }
 
-/* Ajustar a largura da .input-group e centralizar o input */
 .input-container {
     width: 100%;
     display: flex;
@@ -145,7 +144,7 @@ input[type="file"] {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 31.25rem; /* Ajuste conforme necessário */
+    max-width: 31.25rem;
 }
 
 form {

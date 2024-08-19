@@ -154,7 +154,6 @@ main {
     font-size: 0.813rem;
 }
 
-/* Opcional: Estilo para hover e focus */
 .select-input:hover,
 .select-input:focus {
     border-color: #FF735C;

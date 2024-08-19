@@ -154,13 +154,13 @@ main {
     flex-direction: column;
     padding: 0.5rem 0.875rem;
     cursor: pointer;
-    background-color: #3F7263; /* Cor de fundo verde */
-    color: white; /* Cor do texto branco */
-    border: 1px solid #3F7263; /* Borda verde */
-    border-radius: 1.875rem; /* Bordas arredondadas */
+    background-color: #3F7263;
+    color: white;
+    border: 1px solid #3F7263;
+    border-radius: 1.875rem;
     text-align: center;
     font-size: 0.75rem;
-    font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+    font-family: 'Poppins', sans-serif;
 }
 
 .custom-file-upload:hover {
@@ -201,6 +201,7 @@ input[type="file"] {
     background-color: #FFF;
 }
 
+/* Remove as setas do input de número */
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -231,8 +232,8 @@ input[type=number]::-webkit-inner-spin-button {
 
 .sexo-form label {
     display: flex;
-    align-items: center; /* Alinha o texto e o botão de rádio verticalmente */
-    gap: 0.5rem; /* Adiciona um espaço entre o botão e o texto */
+    align-items: center;
+    gap: 0.5rem;
 }
 
 input[type="radio"] {
