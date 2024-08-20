@@ -203,11 +203,11 @@ input[type="file"] {
     width: 58%;
     height: 2.5rem;
     padding: 0.625rem;
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     border-radius: 0.313rem;
     font-size: 1rem;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: #FFF;
     font-family: "Poppins", sans-serif;
     margin: 0.875rem;
     font-size: 0.75rem;
